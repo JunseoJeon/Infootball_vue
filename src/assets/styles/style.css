@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'HangeulNuri-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/HangeulNuri-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NIXGONM-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+    margin: 0;
+    background-color: white;
+}
+main{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 0 15px;
+    padding-top:84px;
+}
+
+.fixtures-wrap{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0px 2px 7px teal;
+    border-radius: 10px;
+}
+
+.fixture-section{
+    position: relative;
+    height: auto;
+    
+}
+
+
+
+
+.showFixt{
+    position: relative;
+    display: inline-block;
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+}
+.loader{
+    position: absolute;
+    left: 570px;
+    bottom: 50%;
+    -webkit-animation:spin 1000ms infinite linear; -moz-animation:spin 1000ms infinite linear; -ms-animation:spin 1000ms infinite linear; animation:spin 1000ms infinite linear;
+
+}
+.loader img{
+    width: 60px;
+    height: 60px;
+}
+.showFixt table{
+    margin: 10px 10px;
+    float: left;
+    padding: 0px;
+    margin-bottom: 6px;
+    border-collapse: collapse;
+    font-family: 'NIXGONM-Vb';
+    font-weight: bold;
+    
+}
+.showFixt th{
+    width: 120px;
+    padding: 6px 3px;
+}
+.showFixt td{
+    width: 120px;
+    text-align: center;
+    padding: 6px 3px;
+}
+.showFixt td img{
+    width: 35px;
+    height: 35px;
+}
+.showFixt th:nth-child(2), .showFixt td:nth-child(2){
+    width: 80px;
+}
+.showFixt th:nth-child(2n-1), .showFixt td:nth-child(2n-1){
+    width: 141px;
+}
+.showFixt tr:last-child td{
+    height: 20px;
+    font-size: 13px;
+}
+
+.showNull{
+    text-align: center;
+    height: 200px;
+    width: 1200px;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 26px;
+    font-family: 'HangeulNuri-Bold';
+    color: darkgrey;
+}
+.default-league{
+    color: black
+}
+.standing-section{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 0px 2px 7px teal;
+    border-radius: 10px;
+}
+.select-season{
+    background-color: #3485A9;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+.select-season select{
+    height: 45px;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    background-color: #3485A9;
+    color: white;
+    font-family: 'HangeulNuri-Bold';
+    margin-left: 10px;
+    text-align-last: center;
+    text-align: center;
+    -ms-text-align-last: center;
+    -moz-text-align-last: center;
+}
+
+.select-season option{
+    text-align: center;
+}
+button:hover{
+    cursor: pointer;
+}
+.table-wrap{
+    margin-bottom: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.table-wrap table{
+    text-align: center;
+    border-collapse: collapse;
+    box-shadow: 0px 2px 7px teal;
+    border-radius: 10px;
+    margin: 20px 20px;
+    font-family: 'NIXGONM-Vb';
+    font-weight: bold;
+}
+.table-wrap th{
+    background-color: #182E59;
+    padding: 2px 3px;
+    font-size: 15px;
+    color: white;
+}
+.topPlayer-table tr:not(:last-child) th:first-child{
+    border-top-left-radius: 10px;
+}
+
+.topPlayer-table tr:not(:last-child) th:last-child{
+    border-top-right-radius: 10px;
+}
+
+.standing-table th:first-child{
+    border-top-left-radius: 10px;
+}
+
+.standing-table th:last-child{
+    border-top-right-radius: 10px;
+}
+.table-wrap td{
+    padding: 2px 7px;
+}
+.standing-table th{
+    padding: 8px 7px;
+}
+.table-wrap tr:nth-child(even){
+   background-color: rgb(159, 241, 241);
+}
+.standing-table tbody td img{
+    width: 45px;
+    height: 45px;
+}
+
+.chooseLeague{
+    text-align: center;
+    height: 100px;
+    width: 1200px;
+    font-size: 26px;
+    font-family: 'HangeulNuri-Bold';
+    color: darkgrey;
+    padding-top: 40px;
+}
+footer{
+    height: 100px;
+}
+
+@-webkit-keyframes spin {
+    100%{ -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    100%{ -moz-transform: rotate(360deg); }
+}
+@-ms-keyframes spin {
+    100%{ -ms-transform: rotate(360deg); }
+}
+@keyframes spin {
+    100%{ transform: rotate(360deg); }
+}
